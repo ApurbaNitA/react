@@ -28,7 +28,7 @@ export class AuthService {
 
     async login ({email, password}){
         try {
-            return await account.createEmailPasswordSession(email,  password );
+            return await account.createEmailSession(email,  password );
             
         } catch (error) {
             throw error;
